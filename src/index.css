@@ -1,0 +1,31 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY GRADIENT */
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+
+  background: linear-gradient(
+    135deg,
+    #021114,
+    #012a2f,
+    #021114,
+    #00363d
+  );
+
+  background-size: 300% 300%;
+  animation: gradientMove 18s ease infinite;
+  min-height: 100vh;
+}
+
+/* ANIMATION */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
