@@ -1,0 +1,117 @@
+.about-page {
+  padding: 80px 10%;
+  color: white;
+}
+
+/* HERO */
+.about-hero {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.about-image img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+.about-content h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.about-content span {
+  color: #00eaff;
+}
+
+.about-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+/* BUTTONS */
+.primary-btn {
+  background: #00eaff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid #00eaff;
+  color: #00eaff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* TOOLBOX */
+.toolbox-section {
+  margin-bottom: 100px;
+}
+
+.toolbox-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.toolbox-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.tags span {
+  display: inline-block;
+  margin: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: rgba(0, 234, 255, 0.1);
+  font-size: 14px;
+}
+
+/* TIMELINE */
+.timeline-section {
+  margin-bottom: 100px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background: #00eaff;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: 6px;
+}
+
+.timeline-content span {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* CTA */
+.about-cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+}
+
+.cta-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}

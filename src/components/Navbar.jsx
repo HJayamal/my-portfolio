@@ -1,56 +1,51 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-    const [scrolled, setScrolled] = useState(false);
-  const [active, setActive] = useState("home");
+  const location = useLocation();
 
-  useEffect(() => {
-  const handleScroll = () => {
-    const sections = ["home", "about", "projects", "contact"];
-
-    // Active link logic
-    sections.forEach((section) => {
-      const element = document.getElementById(section);
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        if (rect.top <= 150 && rect.bottom >= 150) {
-          setActive(section);
-        }
-      }
-    });
-
-    // Background change logic
-    if (window.scrollY > 50) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
   return (
     <nav className="navbar">
-      <h2 className="logo">HARSHAL.</h2>
-
-      <div className="nav-links">
-        <a href="#home" className={active === "home" ? "active" : ""}>
-          Home
-        </a>
-        <a href="#about" className={active === "about" ? "active" : ""}>
-          About
-        </a>
-        <a href="#projects" className={active === "projects" ? "active" : ""}>
-          Projects
-        </a>
-        <a href="#contact" className={active === "contact" ? "active" : ""}>
-          Contact
-        </a>
+      <div className="logo">
+        <Link to="/">HARSHAL.</Link>
       </div>
 
-      <button className="hire-btn">Hire Me</button>
+      <div className="nav-links">
+        <Link
+          to="/"
+          className={location.pathname === "/" ? "active" : ""}
+        >
+          Home
+        </Link>
+
+        <Link
+          to="/about"
+          className={location.pathname === "/about" ? "active" : ""}
+        >
+          About
+        </Link>
+
+        <Link
+          to="/projects"
+          className={location.pathname === "/projects" ? "active" : ""}
+        >
+          Projects
+        </Link>
+
+        <Link
+          to="/contact"
+          className={location.pathname === "/contact" ? "active" : ""}
+        >
+          Contact
+        </Link>
+      </div>
+
+      <div className="nav-btn">
+        <Link to="/contact" className="hire-btn">
+          Hire Me
+        </Link>
+      </div>
     </nav>
   );
 };
