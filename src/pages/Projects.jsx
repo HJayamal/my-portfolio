@@ -6,6 +6,7 @@ import project3 from "../assets/hero.png";
 import project4 from "../assets/hero.png";
 import project5 from "../assets/hero.png";
 import project6 from "../assets/hero.png";
+import project1 from "../assets/hero.png";
 
 
 const projectsData = [
