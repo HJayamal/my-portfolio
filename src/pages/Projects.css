@@ -97,10 +97,10 @@
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 20px;
-  overflow: hidden;
-  transition: 0.3s ease;
+  background: #111827;
+  border: 1px solid #1F2937;
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .project-card:hover {

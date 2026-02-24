@@ -53,19 +53,17 @@
   gap: 15px;
 }
 
-.btn-primary {
-  background: #00eaff;
-  color: #021114;
-  padding: 12px 28px;
-  border-radius: 8px;
+.hero-buttons .primary-btn {
+  background: #2563EB;
+  color: white;
   border: none;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: 0.3s ease;
 }
 
-.btn-primary:hover {
-  transform: translateY(-3px);
+.hero-buttons .primary-btn:hover {
+  background: #3B82F6;
 }
 
 .btn-outline {

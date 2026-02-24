@@ -1,3 +1,13 @@
+:root {
+  --bg: #0B1220;
+  --card: #111827;
+  --border: #1F2937;
+  --blue: #2563EB;
+  --blue-light: #3B82F6;
+  --text: #F9FAFB;
+  --text-soft: #9CA3AF;
+}
+
 /* RESET */
 * {
   margin: 0;
@@ -7,16 +17,12 @@
 
 /* BODY GRADIENT */
 body {
-  font-family: "Inter", sans-serif;
-  color: white;
-
-  background: linear-gradient(
-    135deg,
-    #021114,
-    #012a2f,
-    #021114,
-    #00363d
-  );
+  margin: 0;
+  padding: 0;
+  background-color: #0B1220;
+  color: #F9FAFB;
+  font-family: Arial, sans-serif;
+}
 
   background-size: 300% 300%;
   animation: gradientMove 18s ease infinite;
